@@ -73,8 +73,8 @@ interface Horse {
 
 type Animal = Bird | Horse;
 
+let speed;
 function animalMovement(animal: Animal) {
-  let speed;
   switch (animal.type) {
     case 'bird':
       speed = animal.flySpeed;
